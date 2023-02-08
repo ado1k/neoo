@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{	char input[] = {};
+	system("shutdown -s -t 60");//shutdown -s是关机命令 -t设置时间    shutdown -s -t xx(时间) 
+	printf("输入我是猪取消关机");
+	scanf("%s",input);
+	while(1)
+	{
+		if(strcmp(input,"我是猪") == 0)
+			{
+				system("shutdown -a");//shutdown -a 取消关机  stdlib.h
+				break;
+			}
+			else
+			{	printf("输入错误，请重新输入");
+				scanf("%s",input);
+			 	
+	
+			}
+				
+	}
+		system("pause");//windows.h
+	
+	 
+	
+	return 0;
+}
