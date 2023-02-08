@@ -1,0 +1,57 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h> 
+void game(){
+	
+	int temp;
+	int guess = rand()%100+1;
+	//printf("%d",guess);	
+	while(1){
+			scanf("%d",&temp);
+	
+		if(temp<guess)
+	{
+		printf("猜小了\n");
+	}
+	else if(temp > guess)
+	{
+		printf("猜大了\n");
+	}
+	else{
+		
+		printf("猜对了\n"); 
+		system("pause"); 
+	 	break;
+	}
+	 	
+	}
+
+	
+	
+	
+	
+}
+int main(){
+	
+	int input=0;
+	srand((unsigned int)time(NULL));
+	printf("*****************\n");
+	printf("*****0:exit******\n");
+	printf("*****1:play******\n");
+	printf("*****************\n");
+	printf("请输入数字"); 
+	scanf("%d",&input);
+	switch(input)
+	{
+			case 1: 
+					game();	
+					break;
+			case 0: break;
+			default: printf("输入错误");
+					break; 
+	}
+	
+	 
+	
+	return 0;
+} 
