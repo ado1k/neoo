@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+	int i = 0,j = 0,temp;
+	scanf("%d%d",&i,&j);
+	if(i < j)
+		temp = i;
+	else
+	 	temp = j;
+	
+	
+	while(i < j)
+	{	//temp = i;
+		if( i% temp == 0 && j % temp == 0)
+		{
+			printf("%d",temp);
+			break;
+		}
+		else 
+			temp--;
+	}
+	while(j < i) 
+	{
+			
+		if(j % temp == 0 && i % temp == 0)
+		{
+			printf("%d",temp);
+			break;
+		}
+		else
+			temp--;
+	}
+	
+	  
+	return 0;
+ } 
