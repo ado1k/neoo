@@ -1,0 +1,20 @@
+int is_leapyear(int x)
+{
+	if((x % 4 == 0 && x % 100 != 0 )|| x % 400 == 0 )
+		return 1;
+	else 
+		return 0;
+}
+int main()
+{	int i;
+	for(i = 1000;i <= 2000;i++)
+	{
+		int a = is_leapyear(i);
+		if(a == 1)
+			printf("%d是\n",i);
+		else
+			printf("%d不是\n",i);
+	}
+	
+	return 0;
+}
