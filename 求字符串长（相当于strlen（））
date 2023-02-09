@@ -1,0 +1,16 @@
+int my_strlen(char *str)
+{	int count;
+	while(*str != '\0')
+	{
+		str++;
+		count++;
+	}
+	return count;
+	
+	
+}
+int main()
+{	char arr[] = "bit";
+	printf("%d",my_strlen(arr));
+	return 0;
+}
