@@ -1,0 +1,33 @@
+#include <stdio.h>
+void exchange(int *pa,int *pb)
+{
+	int temp = *pa;
+	*pa = *pb;
+	*pb = temp;
+}
+int main()
+{	int a,b;
+	scanf("%d%d",&a,&b);
+	exchange(&a,&b);
+	printf("%d %d",a,b);
+	return 0;
+}
+
+
+
+#include <stdio.h>
+void exchange(int x,int y)
+{
+	int temp;
+	temp = x;
+	x = y;
+	y = temp;
+	printf("%d %d",x,y);//此句若放在主函数中则a，b不会被交换
+}
+int main()
+{	int a,b;
+	scanf("%d%d",&a,&b);
+	exchange(a,b);
+	
+	return 0;
+}
