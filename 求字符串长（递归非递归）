@@ -1,0 +1,29 @@
+int my_strlen(char *str)
+{	int count;
+	while(*str != '\0')
+	{
+		str++;
+		count++;
+	}
+	return count;
+	
+	
+}
+int main()
+{	char arr[] = "bit";
+	printf("%d",my_strlen(arr));
+	return 0;
+}
+
+
+
+int my_strlen(char *str)
+{
+	if(*str != '\0')
+		return 1 + my_strlen(++str);
+}
+int main()
+{	char arr[] = "bit";
+	printf("%d",my_strlen(arr));
+	return 0;
+}//递归版 不用临时变量
