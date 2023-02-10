@@ -1,0 +1,18 @@
+int func(int x)
+{	int sum;
+	if(x > 9)
+		return func(x / 10) + x % 10;
+	return x;
+	
+	
+	
+}
+int main()
+{	int x;
+	scanf("%d",&x);
+ 	int a =func(x);
+ 	printf("%d",a);
+	
+	
+	return 0;
+}
