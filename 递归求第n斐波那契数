@@ -1,0 +1,14 @@
+int Fib(int n)
+{
+	if(n > 2)
+		return Fib(n - 1) + Fib(n - 2);
+	else
+		return 1;
+}//斐波那契数   例如1 1 2 3 5 8，前2个之和为第三个数
+int main()
+{	int x;
+	scanf("%d",&x);
+	int a = Fib(x);
+	printf("第%d个斐波那契数是%d",x,a);
+	return 0;
+}
