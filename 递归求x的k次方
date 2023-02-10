@@ -1,0 +1,14 @@
+int func(int x,int k)
+{	if(k > 1)
+		return x*func(x,k - 1);
+	else
+		return x;
+}
+int main()
+{	int x,k;
+	scanf("%d",&x);
+	scanf("%d",&k);
+	int a = func(x,k);
+	printf("%d",a);
+	return 0;
+}
