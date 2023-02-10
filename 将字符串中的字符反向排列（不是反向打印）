@@ -1,0 +1,21 @@
+#include <string.h>
+void Rev_str(char *arr)
+{
+	int low = 0;
+	int high = strlen(arr) - 1;
+	while(low < high)
+	{
+		char temp = arr[low];
+		arr[low] = arr[high];
+		arr[high] = temp;
+		low++;
+		high--;
+	}
+}
+
+int main()
+{	char arr[] = "abcdefg";
+	Rev_str(arr);
+	printf("%s",arr);
+	return 0;
+ } 
